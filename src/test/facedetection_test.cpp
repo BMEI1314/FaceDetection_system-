@@ -40,7 +40,7 @@ static std::string predix="test";
 
 static std::string path;
 static bool  dectfaceisopen;
-seeta::FaceDetection detector("./model/seeta_fd_frontal_v1.0.bin");
+seeta::FaceDetection detector("../model/seeta_fd_frontal_v1.0.bin");
 
 struct timeval tv;
 
@@ -92,11 +92,7 @@ static void dectface(Mat img,Mat backtrack,int framediff)
          
          if(num_face>0)
       { 
-         sprintf(binfile, "%s%s%d%s","./bin","img",mmmmmm,".bin");
-                  mmmmmm++;
-                 FileStorage fs(binfile, FileStorage::WRITE);
-                  fs<<"zhangqi"<<img_gray;
-                  fs.release();
+         
 	 gettimeofday(&tv, NULL);
         struct face_locate face_data;
         std::vector<struct face_locate> face_data_vec; 
