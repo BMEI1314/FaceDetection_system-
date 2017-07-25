@@ -1,0 +1,6 @@
+CMAKE_MINIMUM_REQUIRED(VERSION 2.6)
+FIND_PACKAGE( OpenCV REQUIRED )  
+# Declare the target (an executable)
+ADD_EXECUTABLE(zhangqi  3frame_diff.cpp)      
+TARGET_LINK_LIBRARIES(zhangqi ${OpenCV_LIBS}) 
+#MESSAGE(STATUS "OpenCV_LIBS: ${OpenCV_LIBS}")  
