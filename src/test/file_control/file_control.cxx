@@ -17,7 +17,7 @@
  */ 
 #include "file_control.h"
 extern unsigned int peopleID;
-static unsigned int  kMaxAliveTime= 24*60*60; //1 day in second
+static unsigned int  kMaxAliveTime= 5*60*60; //1 day in second
 static char filepath[1024]={0};
 const int create_multi_dir(char *path)
 {  
